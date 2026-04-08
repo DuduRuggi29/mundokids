@@ -1,10 +1,11 @@
 import sys
 import subprocess
 import urllib.request
+import urllib.error
 import json
 import os
 
-token = "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"
+token = "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"
 repo_name = "mundokids"
 
 def make_request(url, method="GET", data=None):
