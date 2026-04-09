@@ -53,12 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnDecline) {
         btnDecline.addEventListener('click', (e) => {
             e.preventDefault();
-            modalDiscount.classList.remove('atomicat-modal-active');
-            setTimeout(() => {
-                modalDiscount.style.display = 'none';
-                modalSoldOut.style.display = 'block';
-                setTimeout(() => modalSoldOut.classList.add('atomicat-modal-active'), 10);
-            }, 300);
+            window.location.href = 'esgotado.html';
         });
     }
 
